@@ -1,0 +1,48 @@
+[debug] [2026-02-10T17:48:57.944Z] ----------------------------------------------------------------------
+[debug] [2026-02-10T17:48:57.946Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2026-02-10T17:48:57.946Z] CLI Version:   15.5.1
+[debug] [2026-02-10T17:48:57.946Z] Platform:      win32
+[debug] [2026-02-10T17:48:57.946Z] Node Version:  v24.12.0
+[debug] [2026-02-10T17:48:57.946Z] Time:          Tue Feb 10 2026 12:48:57 GMT-0500 (GMT-05:00)
+[debug] [2026-02-10T17:48:57.946Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-02-10T17:48:58.970Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-10T17:48:58.970Z] > authorizing via signed-in user (andrewxing5@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2026-02-10T17:48:58.980Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-02-10T17:48:58.980Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-02-10T17:48:58.980Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-02-10T17:48:58.989Z] Write emulator hub locator at C:\Users\andre\AppData\Local\Temp\hub-friendlyeats-codelab.json
+[debug] [2026-02-10T17:48:59.002Z] Checked if tokens are valid: true, expires at: 1770748593255
+[debug] [2026-02-10T17:48:59.002Z] Checked if tokens are valid: true, expires at: 1770748593255
+[debug] [2026-02-10T17:48:59.003Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab [none]
+[debug] [2026-02-10T17:48:59.329Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab 403
+[debug] [2026-02-10T17:48:59.330Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-02-10T17:48:59.330Z] Request to https://firebase.googleapis.com/v1beta1/projects/friendlyeats-codelab had HTTP Error: 403, The caller does not have permission
+[debug] [2026-02-10T17:48:59.677Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2026-02-10T17:48:59.680Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2026-02-10T17:48:59.712Z] Error: Cannot find module 'vite'
+Require stack:
+- C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\utils.js
+- C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js
+- C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\emulators-start.js
+- C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\cli.js
+- C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at require.resolve (node:internal/modules/helpers:163:19)
+    at relativeRequire (C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\utils.js:210:34)
+    at getConfig (C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\vite\index.js:112:65)
+    at discover (C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\vite\index.js:65:68)
+    at async C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\vite\index.js:44:55
+    at async discover (C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:50:32)
+    at async prepareFrameworks (C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:194:25)
+    at async Object.startAll (C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:335:9)
+    at async C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\emulators-start.js:34:43
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-10T17:48:59.990Z] Found emulator hub locator: {"version":"15.5.1","origins":["http://127.0.0.1:4400","http://[::1]:4400"],"pid":23356}
